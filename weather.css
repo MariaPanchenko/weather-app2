@@ -1,0 +1,139 @@
+body {
+  padding: 30px 15px;
+}
+h1 {
+  font-size: 130px;
+  margin-top: 30px;
+}
+h2 {
+  font-size: 70px;
+  margin-top: 40px;
+}
+h1,
+h2 {
+  color: dimgray;
+}
+ul li {
+  list-style: none;
+}
+.wrapper {
+  border: 2px solid #7b7b7b;
+  margin: 0 auto;
+  max-width: 1366px;
+  min-height: 500px;
+}
+.today {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+.temp {
+  text-align: center;
+}
+.hourly-label {
+  color: grey;
+  margin-left: 65px;
+  margin-bottom: 30px;
+}
+.row {
+  flex-direction: row;
+  align-items: flex-end;
+}
+.hourly-forecast li {
+  color: grey;
+  text-align: center;
+}
+.degrees {
+  font-weight: bold;
+}
+.li-size {
+  font-size: 18px;
+  color: dimgray;
+  font-weight: bold;
+}
+.col-1 {
+  color: dimgray;
+}
+i {
+  color: rgb(0, 106, 255);
+}
+.right-side {
+  /* ...styles here... */
+}
+.left-side {
+  border-left: 2px solid #7b7b7b;
+}
+.data-time {
+  font-size: 24px;
+  color: dimgray;
+}
+.fa-cloud {
+  color: rgb(0, 106, 255);
+  font-size: 60px;
+}
+.cloud {
+  font-size: 24px;
+  color: dimgray;
+  margin-top: 15px;
+}
+.status {
+  text-align: center;
+  margin-top: 60px;
+}
+.fa-search {
+  color: dimgray;
+}
+.search-input {
+  width: calc(100% - 50px);
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  border: none;
+  color: grey;
+}
+.search-button {
+  float: right;
+  margin-right: -15px;
+  border-bottom: 2px solid #7b7b7b;
+  border-left: 2px solid #7b7b7b;
+  border-right: 0;
+  border-top: 0;
+  color: #000;
+  padding: 10px 20px;
+  background-color: white;
+}
+.search-button:hover {
+  color: #a9a9f8;
+}
+.city-button {
+  border: none;
+  color: dimgray;
+  background: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.city-button:hover {
+  color: #9191f2;
+}
+.weekly-label {
+  color: grey;
+  padding: 10px 10px 10px 15px;
+  margin-bottom: 15px;
+}
+.left-day {
+  color: dimgray;
+}
+.weekly-forecast .row {
+  color: grey;
+  margin-bottom: 10px;
+}
+i {
+  font-size: 20px;
+}
+.left-degrees {
+  font-size: 18px;
+  font-weight: bold;
+}

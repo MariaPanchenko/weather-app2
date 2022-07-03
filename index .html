@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cb0d12a11f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <main class="row wrapper">
+      <section class="col-7 right-side">
+        <div class="row today">
+          <h1 id="temp" class="col-3 temp">11°</h1>
+
+          <div class="col-7">
+            <h2 id="city">Poznan</h2>
+            <time class="data-time">12:04 - Friday, 9 June</time>
+          </div>
+
+          <div class="col-2 status">
+            <i class="fa-solid fa-cloud"></i>
+            <p class="cloud">cloudly</p>
+          </div>
+        </div>
+
+        <h6 class="hourly-label">Hourly forecast</h6>
+        <ul class="row hourly-forecast">
+          <li class="col-2 li-size">
+            Now
+            <br />
+            <i class="fa-solid fa-cloud-moon"></i>
+            <p class="degrees">11°</p>
+          </li>
+          <li class="col-1 li-size">
+            13
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p class="degrees">12°</p>
+          </li>
+          <li class="col-1 li-size">
+            14
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p class="degrees">12°</p>
+          </li>
+          <li class="col-1 li-size">
+            15
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p class="degrees">12°</p>
+          </li>
+          <li class="col-1 li-size">
+            16
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p class="degrees">15°</p>
+          </li>
+          <li class="col-1 li-size">
+            17
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p class="degrees">12°</p>
+          </li>
+          <li class="col-1 li-size">
+            18
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p class="degrees">16°</p>
+          </li>
+          <li class="col-1 li-size">
+            19
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p class="degrees">13°</p>
+          </li>
+          <li class="col-1 li-size">
+            20
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p class="degrees">10°</p>
+          </li>
+          <li class="col-1 li-size">
+            21
+            <br />
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p class="degrees">11°</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="col-5 left-side">
+        <div class="info">
+          <form class="search" action="#">
+            <input
+              type="search"
+              class="search-input"
+              placeholder="Another city"
+            />
+            <button class="search-button" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+
+          <hr />
+          <div>
+            <div>
+              <button type="button" class="city-button"><b>Krakow</b></button>
+            </div>
+            <div>
+              <button type="button" class="city-button"><b>Wroclaw</b></button>
+            </div>
+            <div>
+              <button type="button" class="city-button"><b>Gdansk</b></button>
+            </div>
+            <div>
+              <button type="button" class="city-button"><b>Warsaw</b></button>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <h6 class="weekly-label">Weekly forecast</h6>
+
+        <ul class="container weekly-forecast">
+          <li class="row">
+            <div class="col-7 left-day"><b>Saturday</b></div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-moon-rain"></i>
+            </div>
+            <div class="col-2 left-degrees">10°</div>
+          </li>
+          <li class="row">
+            <div class="col-7 left-day"><b>Sunday</b></div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-bolt"></i>
+            </div>
+            <div class="col-2 left-degrees">10°</div>
+          </li>
+          <li class="row">
+            <div class="col-7 left-day"><b>Monday</b></div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-moon-rain"></i>
+            </div>
+            <div class="col-2 left-degrees">10°</div>
+          </li>
+          <li class="row">
+            <div class="col-7 left-day"><b>Tuesday</b></div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-sun"></i>
+            </div>
+            <div class="col-2 left-degrees">10°</div>
+          </li>
+          <li class="row">
+            <div class="col-7 left-day"><b>Wednesday</b></div>
+            <div class="col-3">
+              <i class="fa-solid fa-cloud-moon-rain"></i>
+            </div>
+            <div class="col-2 left-degrees">10°</div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
