@@ -44,6 +44,7 @@
 //   );
 // }
 
+// realTime
 let now = new Date();
 let time = document.querySelector('time');
 
@@ -77,4 +78,14 @@ let date = now.getDate();
 let month = months[now.getMonth()];
 
 time.innerHTML = `${hours}:${minutes}-${day},${date} ${month}`;
-// console.log(time);
+
+// search
+function search(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector('#search-input');
+
+  let h2 = document.querySelector('h2');
+  h2.innerHTML = `${searchInput.value}`;
+}
+let form = document.querySelector('#search-form');
+form.addEventListener('submit', search);
