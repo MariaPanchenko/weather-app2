@@ -4,11 +4,11 @@
 }
 body {
   padding: 30px 15px;
-  margin: 0 auto;
+  margin: 30px auto;
   position: relative;
 }
 body::after {
-  background-image: url(img/clouds-cloudporn-weather-lookup-158163.jpeg);
+  background-image: url(img/pexels-photo-414659.webp);
   position: fixed;
   /* margin: -10px; */
   content: '';
@@ -51,6 +51,7 @@ ul li {
 } */
 .wrapper {
   border: 2px solid #7b7b7b;
+  border-radius: 4px;
   margin: 0 auto;
   max-width: 1366px;
   min-height: 500px;
