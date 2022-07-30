@@ -190,3 +190,7 @@ i {
   font-size: 18px;
   font-weight: bold;
 }
+small {
+  color: var(--main-color);
+  margin-left: 20px;
+}
