@@ -1,3 +1,9 @@
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+
+  return days[day];
+}
 // function formatDate(timestamp) {
 //   let date = new Date(timestamp);
 //   let hours = date.getHours();
@@ -54,10 +60,11 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector('#description');
   let dateElement = document.querySelector('#date');
   let iconElement = document.querySelector('#icon');
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  console.dir(iconElement);
+  temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}°`;
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  // dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     'src',
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
