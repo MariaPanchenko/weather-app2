@@ -27,11 +27,32 @@ let months = [
 ];
 let hours = now.getHours();
 let minutes = now.getMinutes();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 let day = days[now.getDay()];
 let date = now.getDate();
 let month = months[now.getMonth()];
 
 time.innerHTML = `${hours}:${minutes}-${day},${date} ${month}`;
+
+function displaytemperature(response) {
+  let temperatureElement = document.querySelector('#temperature');
+  let cityElement = document.querySelector('#city');
+  let descriptionElement = document.querySelector('#description');
+  let iconElement = document.querySelector('#icon');
+
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  cityElement.innerHTML = response.data.name;
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  iconElement.setAttribute(
+    'i',
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+}
 
 function displayWeather(response) {
   document.querySelector('#city').innerHTML = response.data.name;

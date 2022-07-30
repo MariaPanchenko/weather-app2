@@ -8,7 +8,7 @@ body {
   position: relative;
 }
 body::after {
-  background-image: url(img/pexels-photo-414659.webp);
+  background-image: url(img/mountains-1985027_1280.jpg);
   position: fixed;
   /* margin: -10px; */
   content: '';
@@ -113,6 +113,7 @@ i {
   font-size: 24px;
   color: var(--main-color);
   margin-top: 15px;
+  text-transform: capitalize;
 }
 .status {
   text-align: center;
@@ -128,7 +129,7 @@ i {
   background-color: transparent;
   border-radius: 3px;
   border: none;
-  color: var(--second-color);
+  color: var(--main-color);
 }
 ::-webkit-input-placeholder {
   color: var(--main-color);
