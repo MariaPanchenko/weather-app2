@@ -56,9 +56,11 @@ ul li {
   max-width: 1366px;
   min-height: 500px;
 }
-.today {
+.row {
   flex-direction: row;
   align-items: center;
+}
+.today {
   margin-bottom: 50px;
   margin-left: 30px;
   margin-right: 40px;
@@ -69,14 +71,11 @@ ul li {
   text-align: center;
 }
 .hourly-label {
-  color: var(--second-color);
+  color: var(--main-color);
   margin-left: 65px;
   margin-bottom: 30px;
 }
-.row {
-  flex-direction: row;
-  align-items: flex-end;
-}
+
 .hourly-forecast li {
   color: var(--main-color);
   text-align: center;
@@ -93,7 +92,7 @@ ul li {
   color: var(--main-color);
 }
 i {
-  color: var(--second-color);
+  color: var(--main-color);
 }
 .right-side {
   /* ...styles here... */
@@ -118,6 +117,8 @@ i {
 .status {
   text-align: center;
   margin-top: 60px;
+}
+.hourly-weather {
 }
 .fa-search {
   color: var(--main-color);
@@ -153,7 +154,6 @@ i {
   color: var(--main-color);
   padding: 10px 20px;
   background-color: transparent;
-  /* background-color: rgb(176, 201, 221); */
 }
 .search-button:hover {
   color: #9191f2;
