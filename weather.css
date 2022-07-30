@@ -50,7 +50,7 @@ ul li {
 /* backdrop-filter: blur(8px);
 } */
 .wrapper {
-  border: 2px solid #7b7b7b;
+  border: 2px solid var(--main-color);
   border-radius: 4px;
   margin: 0 auto;
   max-width: 1366px;
@@ -99,7 +99,7 @@ i {
   /* ...styles here... */
 }
 .left-side {
-  border-left: 2px solid #7b7b7b;
+  border-left: 2px solid var(--main-color);
 }
 .data-time {
   font-size: 24px;
@@ -146,8 +146,8 @@ i {
 .search-button {
   float: right;
   margin-right: -15px;
-  border-bottom: 2px solid #7b7b7b;
-  border-left: 2px solid #7b7b7b;
+  border-bottom: 2px solid var(--main-color);
+  border-left: 2px solid var(--main-color);
   border-right: 0;
   border-top: 0;
   color: var(--main-color);
@@ -160,14 +160,14 @@ i {
 }
 .city-button {
   border: none;
-  color: var(--second-color);
+  color: var(--main-color);
   background: none;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 hr {
-  background-color: var(--second-color);
+  background-color: var(--main-color);
 }
 .city-button:hover {
   color: #9191f2;
@@ -178,7 +178,7 @@ hr {
   margin-bottom: 15px;
 }
 .left-day {
-  color: var(--second-color);
+  color: var(--main-color);
 }
 .weekly-forecast .row {
   color: var(--main-color);
