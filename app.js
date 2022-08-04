@@ -54,6 +54,55 @@ let month = months[now.getMonth()];
 
 time.innerHTML = `${hours}:${minutes}-${day}, ${date} ${month}`;
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ['Mon', 'Tue', 'Wed', 'Tue', 'Fri', 'Sat', 'San'];
+  return days[day];
+}
+
+function displayForecast(response) {
+  let forecast = response.data.daily;
+  let forecastElement = document.querySelector('#forecast');
+  let forecastHTML = `<ul class="row">`;
+  // let days = ['Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
+          <li >
+            <div class="col-7 left-day"><b>${formatDay(
+              forecastDay.dt
+            )}</b></div>
+            <div class="col-3">
+             <img
+          src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
+          alt=""
+          width="42"
+        />
+            </div>
+            <div class="col-2 left-degrees">${Math.round(
+              forecastDay.temp.max
+            )}°</div>
+    </li>
+  
+  `;
+    }
+  });
+
+  forecastHTML = forecastHTML + `</ul>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = '7b33e98fb3b0406841a50cf97f2e248a';
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector('#temperature');
   let cityElement = document.querySelector('#city');
@@ -70,7 +119,10 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute('alt', response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
+
 function search(city) {
   let apiKey = '7b33e98fb3b0406841a50cf97f2e248a';
   // let city = 'Lviv';
@@ -88,3 +140,4 @@ let form = document.querySelector('#search-form');
 form.addEventListener('submit', handleSubmit);
 
 search('Lviv');
+// displayForecast();
