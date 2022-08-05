@@ -77,23 +77,14 @@ ul li {
   margin-bottom: 30px;
 }
 
-.hourly-forecast li {
+.weather-details li {
   color: var(--main-color);
   text-align: center;
-}
-.degrees {
+  margin-right: 20px;
   font-weight: bold;
 }
-.li-size {
-  font-size: 18px;
-  color: var(--main-color);
-  font-weight: bold;
-}
-.col-1 {
-  color: var(--main-color);
-}
-i {
-  color: var(--main-color);
+.col-6 {
+  margin-left: 25px;
 }
 .right-side {
   /* ...styles here... */

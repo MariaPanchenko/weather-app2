@@ -33,69 +33,13 @@
           </div>
         </div>
         <div class="hourly-weather">
-          <h6 class="hourly-label">Hourly forecast</h6>
-          <ul class="row hourly-forecast">
-            <li class="col-2 li-size">
-              Now
-              <br />
-              <i class="fa-solid fa-cloud-moon"></i>
-              <p class="degrees">11°</p>
-            </li>
-            <li class="col-1 li-size">
-              13
-              <br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
-              <p class="degrees">12°</p>
-            </li>
-            <li class="col-1 li-size">
-              14
-              <br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
-              <p class="degrees">12°</p>
-            </li>
-            <li class="col-1 li-size">
-              15
-              <br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
-              <p class="degrees">12°</p>
-            </li>
-            <li class="col-1 li-size">
-              16
-              <br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
-              <p class="degrees">15°</p>
-            </li>
-            <li class="col-1 li-size">
-              17
-              <br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
-              <p class="degrees">12°</p>
-            </li>
-            <li class="col-1 li-size">
-              18
-              <br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
-              <p class="degrees">16°</p>
-            </li>
-            <li class="col-1 li-size">
-              19
-              <br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
-              <p class="degrees">13°</p>
-            </li>
-            <li class="col-1 li-size">
-              20
-              <br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
-              <p class="degrees">10°</p>
-            </li>
-            <li class="col-1 li-size">
-              21
-              <br />
-              <i class="fa-solid fa-cloud-showers-heavy"></i>
-              <p class="degrees">11°</p>
-            </li>
-          </ul>
+          <h6 class="hourly-label">Weather details</h6>
+          <div class="col-6">
+            <ul class="row weather-details">
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> m/h</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -133,43 +77,6 @@
 
         <h6 class="weekly-label">Weekly forecast</h6>
         <div class="container weekly-forecast" id="forecast"></div>
-        <!-- <ul class="container weekly-forecast">
-          <li class="row">
-            <div class="col-7 left-day"><b>Saturday</b></div>
-            <div class="col-3">
-              <i class="fa-solid fa-cloud-moon-rain"></i>
-            </div>
-            <div class="col-2 left-degrees">10°</div>
-          </li>
-          <li class="row">
-            <div class="col-7 left-day"><b>Sunday</b></div>
-            <div class="col-3">
-              <i class="fa-solid fa-cloud-bolt"></i>
-            </div>
-            <div class="col-2 left-degrees">10°</div>
-          </li>
-          <li class="row">
-            <div class="col-7 left-day"><b>Monday</b></div>
-            <div class="col-3">
-              <i class="fa-solid fa-cloud-moon-rain"></i>
-            </div>
-            <div class="col-2 left-degrees">10°</div>
-          </li>
-          <li class="row">
-            <div class="col-7 left-day"><b>Tuesday</b></div>
-            <div class="col-3">
-              <i class="fa-solid fa-cloud-sun"></i>
-            </div>
-            <div class="col-2 left-degrees">10°</div>
-          </li>
-          <li class="row">
-            <div class="col-7 left-day"><b>Wednesday</b></div>
-            <div class="col-3">
-              <i class="fa-solid fa-cloud-moon-rain"></i>
-            </div>
-            <div class="col-2 left-degrees">10°</div>
-          </li>
-        </ul> -->
       </section>
     </main>
     <small>
