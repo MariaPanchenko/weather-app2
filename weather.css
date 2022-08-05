@@ -135,7 +135,7 @@ ul li {
 }
 .search-button {
   float: right;
-  margin-top: -37px;
+  margin-top: -43px;
   margin-right: -15px;
   border-bottom: 2px solid var(--main-color);
   border-left: 2px solid var(--main-color);
